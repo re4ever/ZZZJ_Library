@@ -110,7 +110,7 @@
                 <el-menu-item index="mainpage">홈페이지</el-menu-item>
                 <el-menu-item index="pilot">파일럿 일람</el-menu-item>
             </el-menu>
-            <el-autocomplete v-model="search_input" style="margin-top: 10px; width: 100%;" placeholder="请输入机师名" :fetch-suggestions="query_pilot" @select="pilot_handle_select"></el-autocomplete>
+            <!-- <el-autocomplete v-model="search_input" style="margin-top: 10px; width: 100%;" placeholder="请输入机师名" :fetch-suggestions="query_pilot" @select="pilot_handle_select"></el-autocomplete> -->
             <div>
                 <el-button type="primary" style="width: 100%; margin-top: 10px;" @click="open_view = true"> 파일럿 목록<i class="el-icon-arrow-down el-icon--right"></i> </el-button>
             </div>
@@ -170,7 +170,7 @@
                             <i @click="set_star(1)" class="el-icon-circle-plus-outline"></i>
                         </div>
                         <div style="grid-area: price; height: 100%; display: flex; flex-flow: column; flex-wrap: wrap;">
-                            <span>별 등급</span>
+                            <span>승급 재료</span>
                             <div v-for="sp in get_next_star_item()">
                                 <el-avatar shape="square" style="margin: 1px; background: transparent;" :size="48" :src="get_icon(sp[0])"></el-avatar>
                                 <span>x{{sp[1]}}</span>
