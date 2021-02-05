@@ -1,0 +1,839 @@
+
+Armor_000392.png
+size: 2199,2199
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01_0
+  rotate: true
+  xy: 908, 849
+  size: 449, 164
+  orig: 449, 164
+  offset: 0, 0
+  index: -1
+01_1
+  rotate: true
+  xy: 1002, 393
+  size: 182, 260
+  orig: 182, 260
+  offset: 0, 0
+  index: -1
+01_10
+  rotate: false
+  xy: 2, 1736
+  size: 768, 461
+  orig: 768, 461
+  offset: 0, 0
+  index: -1
+01_100
+  rotate: false
+  xy: 1264, 365
+  size: 231, 247
+  orig: 231, 247
+  offset: 0, 0
+  index: -1
+01_101
+  rotate: false
+  xy: 2122, 305
+  size: 59, 78
+  orig: 59, 78
+  offset: 0, 0
+  index: -1
+01_103
+  rotate: false
+  xy: 1222, 2
+  size: 163, 202
+  orig: 163, 202
+  offset: 0, 0
+  index: -1
+01_104
+  rotate: false
+  xy: 772, 1300
+  size: 506, 474
+  orig: 506, 474
+  offset: 0, 0
+  index: -1
+01_105
+  rotate: false
+  xy: 310, 2
+  size: 410, 219
+  orig: 410, 219
+  offset: 0, 0
+  index: -1
+01_106
+  rotate: false
+  xy: 772, 1776
+  size: 703, 421
+  orig: 703, 421
+  offset: 0, 0
+  index: -1
+01_107
+  rotate: false
+  xy: 1541, 759
+  size: 290, 132
+  orig: 290, 132
+  offset: 0, 0
+  index: -1
+01_108
+  rotate: false
+  xy: 2095, 1304
+  size: 102, 89
+  orig: 102, 89
+  offset: 0, 0
+  index: -1
+01_109
+  rotate: false
+  xy: 2072, 1304
+  size: 11, 48
+  orig: 11, 48
+  offset: 0, 0
+  index: -1
+01_11
+  rotate: false
+  xy: 1541, 893
+  size: 317, 145
+  orig: 317, 145
+  offset: 0, 0
+  index: -1
+01_110
+  rotate: true
+  xy: 310, 471
+  size: 28, 23
+  orig: 28, 23
+  offset: 0, 0
+  index: -1
+01_111
+  rotate: false
+  xy: 1964, 533
+  size: 110, 181
+  orig: 110, 181
+  offset: 0, 0
+  index: -1
+01_112
+  rotate: false
+  xy: 2187, 1256
+  size: 10, 46
+  orig: 10, 46
+  offset: 0, 0
+  index: -1
+01_113
+  rotate: false
+  xy: 1972, 1048
+  size: 114, 143
+  orig: 114, 143
+  offset: 0, 0
+  index: -1
+01_114
+  rotate: false
+  xy: 1836, 533
+  size: 126, 193
+  orig: 126, 193
+  offset: 0, 0
+  index: -1
+01_115
+  rotate: false
+  xy: 2024, 385
+  size: 171, 98
+  orig: 171, 98
+  offset: 0, 0
+  index: -1
+01_116
+  rotate: false
+  xy: 1773, 312
+  size: 163, 110
+  orig: 163, 110
+  offset: 0, 0
+  index: -1
+01_117
+  rotate: false
+  xy: 989, 58
+  size: 231, 157
+  orig: 231, 157
+  offset: 0, 0
+  index: -1
+01_118
+  rotate: false
+  xy: 761, 2
+  size: 226, 258
+  orig: 226, 258
+  offset: 0, 0
+  index: -1
+01_119
+  rotate: false
+  xy: 1247, 206
+  size: 229, 157
+  orig: 231, 157
+  offset: 0, 0
+  index: -1
+01_12
+  rotate: false
+  xy: 2072, 1204
+  size: 113, 98
+  orig: 113, 98
+  offset: 0, 0
+  index: -1
+01_120
+  rotate: false
+  xy: 1497, 257
+  size: 227, 157
+  orig: 231, 157
+  offset: 0, 0
+  index: -1
+01_121
+  rotate: false
+  xy: 2, 1279
+  size: 768, 455
+  orig: 768, 461
+  offset: 0, 0
+  index: -1
+01_13
+  rotate: true
+  xy: 908, 835
+  size: 12, 53
+  orig: 12, 53
+  offset: 0, 0
+  index: -1
+01_14
+  rotate: false
+  xy: 1495, 759
+  size: 32, 15
+  orig: 32, 15
+  offset: 0, 0
+  index: -1
+01_15
+  rotate: false
+  xy: 1982, 845
+  size: 122, 201
+  orig: 122, 201
+  offset: 0, 0
+  index: -1
+01_16
+  rotate: false
+  xy: 747, 773
+  size: 11, 51
+  orig: 11, 51
+  offset: 0, 0
+  index: -1
+01_17
+  rotate: true
+  xy: 1972, 716
+  size: 127, 159
+  orig: 127, 159
+  offset: 0, 0
+  index: -1
+01_18
+  rotate: false
+  xy: 1540, 44
+  size: 139, 211
+  orig: 139, 211
+  offset: 0, 0
+  index: -1
+01_19
+  rotate: true
+  xy: 335, 756
+  size: 521, 410
+  orig: 521, 410
+  offset: 0, 0
+  index: -1
+01_2
+  rotate: false
+  xy: 1836, 424
+  size: 186, 107
+  orig: 186, 107
+  offset: 0, 0
+  index: -1
+01_20
+  rotate: true
+  xy: 2, 54
+  size: 445, 306
+  orig: 445, 306
+  offset: 0, 0
+  index: -1
+01_21
+  rotate: true
+  xy: 1280, 1299
+  size: 475, 167
+  orig: 475, 167
+  offset: 0, 0
+  index: -1
+01_22
+  rotate: true
+  xy: 1449, 1298
+  size: 476, 167
+  orig: 476, 167
+  offset: 0, 0
+  index: -1
+01_23
+  rotate: false
+  xy: 1618, 1354
+  size: 475, 167
+  orig: 475, 167
+  offset: 0, 0
+  index: -1
+01_24
+  rotate: true
+  xy: 2088, 1050
+  size: 152, 94
+  orig: 152, 94
+  offset: 0, 0
+  index: -1
+01_25
+  rotate: false
+  xy: 335, 464
+  size: 423, 290
+  orig: 423, 290
+  offset: 0, 0
+  index: -1
+01_26
+  rotate: true
+  xy: 747, 826
+  size: 451, 159
+  orig: 451, 159
+  offset: 0, 0
+  index: -1
+01_27
+  rotate: false
+  xy: 1618, 1193
+  size: 452, 159
+  orig: 452, 159
+  offset: 0, 0
+  index: -1
+01_28
+  rotate: true
+  xy: 1074, 847
+  size: 451, 159
+  orig: 451, 159
+  offset: 0, 0
+  index: -1
+01_29
+  rotate: true
+  xy: 2106, 904
+  size: 144, 89
+  orig: 144, 89
+  offset: 0, 0
+  index: -1
+01_3
+  rotate: true
+  xy: 1860, 859
+  size: 179, 120
+  orig: 179, 120
+  offset: 0, 0
+  index: -1
+01_30
+  rotate: false
+  xy: 1618, 1523
+  size: 402, 276
+  orig: 402, 276
+  offset: 0, 0
+  index: -1
+01_31
+  rotate: true
+  xy: 1388, 867
+  size: 429, 151
+  orig: 429, 151
+  offset: 0, 0
+  index: -1
+01_32
+  rotate: true
+  xy: 1235, 867
+  size: 430, 151
+  orig: 430, 151
+  offset: 0, 0
+  index: -1
+01_33
+  rotate: false
+  xy: 1541, 1040
+  size: 429, 151
+  orig: 429, 151
+  offset: 0, 0
+  index: -1
+01_34
+  rotate: false
+  xy: 1773, 225
+  size: 136, 85
+  orig: 136, 85
+  offset: 0, 0
+  index: -1
+01_35
+  rotate: true
+  xy: 2061, 1875
+  size: 322, 110
+  orig: 322, 110
+  offset: 0, 0
+  index: -1
+01_36
+  rotate: true
+  xy: 2, 501
+  size: 776, 331
+  orig: 776, 331
+  offset: 0, 0
+  index: -1
+01_37
+  rotate: false
+  xy: 2133, 718
+  size: 58, 69
+  orig: 58, 69
+  offset: 0, 0
+  index: -1
+01_39
+  rotate: false
+  xy: 1739, 426
+  size: 95, 197
+  orig: 95, 197
+  offset: 0, 0
+  index: -1
+01_4
+  rotate: true
+  xy: 2022, 1546
+  size: 253, 170
+  orig: 253, 170
+  offset: 0, 0
+  index: -1
+01_40
+  rotate: true
+  xy: 2076, 485
+  size: 90, 118
+  orig: 90, 118
+  offset: 0, 0
+  index: -1
+01_42
+  rotate: true
+  xy: 1387, 2
+  size: 202, 151
+  orig: 202, 151
+  offset: 0, 0
+  index: -1
+01_43
+  rotate: false
+  xy: 1497, 416
+  size: 240, 207
+  orig: 240, 207
+  offset: 0, 0
+  index: -1
+01_44
+  rotate: true
+  xy: 994, 217
+  size: 174, 251
+  orig: 174, 251
+  offset: 0, 0
+  index: -1
+01_45
+  rotate: false
+  xy: 1477, 1801
+  size: 582, 396
+  orig: 582, 396
+  offset: 0, 0
+  index: -1
+01_5
+  rotate: false
+  xy: 1002, 577
+  size: 247, 268
+  orig: 247, 268
+  offset: 0, 0
+  index: -1
+01_6
+  rotate: false
+  xy: 760, 542
+  size: 240, 282
+  orig: 240, 282
+  offset: 0, 0
+  index: -1
+01_7
+  rotate: false
+  xy: 1251, 614
+  size: 242, 251
+  orig: 242, 251
+  offset: 0, 0
+  index: -1
+01_8
+  rotate: false
+  xy: 310, 223
+  size: 449, 239
+  orig: 449, 239
+  offset: 0, 0
+  index: -1
+01_9
+  rotate: true
+  xy: 761, 262
+  size: 278, 231
+  orig: 278, 231
+  offset: 0, 0
+  index: -1
+01_97
+  rotate: false
+  xy: 1681, 43
+  size: 83, 212
+  orig: 83, 212
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_100
+  rotate: true
+  xy: 1477, 1776
+  size: 23, 97
+  orig: 23, 97
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_101
+  rotate: true
+  xy: 1766, 40
+  size: 46, 74
+  orig: 46, 74
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_102
+  rotate: false
+  xy: 1181, 2
+  size: 26, 24
+  orig: 26, 24
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_103
+  rotate: false
+  xy: 814, 1279
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_104
+  rotate: true
+  xy: 2022, 1523
+  size: 21, 20
+  orig: 21, 20
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_105
+  rotate: false
+  xy: 1675, 2
+  size: 55, 39
+  orig: 55, 39
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_106
+  rotate: false
+  xy: 1966, 226
+  size: 31, 48
+  orig: 31, 48
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_107
+  rotate: true
+  xy: 247, 21
+  size: 31, 51
+  orig: 31, 51
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_108
+  rotate: true
+  xy: 1833, 860
+  size: 31, 20
+  orig: 31, 20
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_109
+  rotate: false
+  xy: 2133, 789
+  size: 64, 36
+  orig: 64, 36
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_110
+  rotate: false
+  xy: 1541, 1209
+  size: 74, 87
+  orig: 74, 87
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_111
+  rotate: true
+  xy: 722, 14
+  size: 42, 37
+  orig: 42, 37
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_112
+  rotate: false
+  xy: 1732, 2
+  size: 59, 36
+  orig: 59, 36
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_113
+  rotate: true
+  xy: 2095, 1395
+  size: 149, 102
+  orig: 149, 102
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_114
+  rotate: false
+  xy: 1938, 340
+  size: 68, 82
+  orig: 68, 82
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_115
+  rotate: true
+  xy: 1938, 276
+  size: 62, 68
+  orig: 62, 68
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_116
+  rotate: true
+  xy: 2061, 1817
+  size: 56, 133
+  orig: 56, 133
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_117
+  rotate: true
+  xy: 1780, 668
+  size: 89, 44
+  orig: 89, 44
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_118
+  rotate: false
+  xy: 1726, 275
+  size: 45, 139
+  orig: 45, 139
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_119
+  rotate: true
+  xy: 1478, 340
+  size: 23, 17
+  orig: 23, 17
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_120
+  rotate: true
+  xy: 1793, 5
+  size: 33, 40
+  orig: 33, 40
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_121
+  rotate: true
+  xy: 1780, 625
+  size: 34, 52
+  orig: 34, 52
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_122
+  rotate: true
+  xy: 1842, 42
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_125
+  rotate: true
+  xy: 2133, 827
+  size: 41, 64
+  orig: 41, 64
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_126
+  rotate: false
+  xy: 722, 58
+  size: 31, 163
+  orig: 31, 163
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_72
+  rotate: true
+  xy: 2024, 485
+  size: 46, 43
+  orig: 46, 43
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_73
+  rotate: true
+  xy: 1826, 661
+  size: 65, 8
+  orig: 65, 8
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_74
+  rotate: true
+  xy: 2184, 1135
+  size: 67, 13
+  orig: 67, 13
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_75
+  rotate: true
+  xy: 1911, 141
+  size: 65, 30
+  orig: 65, 30
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_76
+  rotate: true
+  xy: 1833, 728
+  size: 129, 137
+  orig: 129, 137
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_77
+  rotate: false
+  xy: 1883, 90
+  size: 26, 133
+  orig: 26, 133
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_78
+  rotate: false
+  xy: 1090, 3
+  size: 89, 53
+  orig: 89, 53
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_79
+  rotate: false
+  xy: 1495, 776
+  size: 44, 89
+  orig: 44, 89
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_80
+  rotate: true
+  xy: 989, 2
+  size: 54, 99
+  orig: 54, 99
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_81
+  rotate: true
+  xy: 171, 2
+  size: 50, 74
+  orig: 50, 74
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_82
+  rotate: true
+  xy: 2, 4
+  size: 48, 167
+  orig: 48, 167
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_83
+  rotate: true
+  xy: 1495, 625
+  size: 132, 283
+  orig: 132, 283
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_84
+  rotate: false
+  xy: 1766, 88
+  size: 115, 135
+  orig: 115, 135
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_85
+  rotate: false
+  xy: 1911, 208
+  size: 53, 66
+  orig: 53, 66
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_86
+  rotate: false
+  xy: 2061, 1801
+  size: 86, 14
+  orig: 86, 14
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_87
+  rotate: false
+  xy: 2008, 270
+  size: 77, 26
+  orig: 77, 26
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_88
+  rotate: true
+  xy: 2173, 2113
+  size: 84, 22
+  orig: 84, 22
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_89
+  rotate: false
+  xy: 2106, 870
+  size: 89, 32
+  orig: 89, 32
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_90
+  rotate: false
+  xy: 772, 1279
+  size: 40, 19
+  orig: 40, 19
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_91
+  rotate: true
+  xy: 1576, 1776
+  size: 23, 27
+  orig: 23, 27
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_92
+  rotate: false
+  xy: 1181, 28
+  size: 39, 28
+  orig: 39, 28
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_93
+  rotate: true
+  xy: 994, 512
+  size: 28, 6
+  orig: 28, 6
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_94
+  rotate: true
+  xy: 994, 483
+  size: 27, 6
+  orig: 27, 6
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_95
+  rotate: true
+  xy: 2149, 1801
+  size: 14, 20
+  orig: 14, 20
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_96
+  rotate: true
+  xy: 1251, 600
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_97
+  rotate: false
+  xy: 2008, 298
+  size: 112, 85
+  orig: 112, 85
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_98
+  rotate: false
+  xy: 2076, 577
+  size: 121, 137
+  orig: 121, 137
+  offset: 0, 0
+  index: -1
+image/Armor_000392/01_99
+  rotate: true
+  xy: 1540, 14
+  size: 28, 133
+  orig: 28, 133
+  offset: 0, 0
+  index: -1

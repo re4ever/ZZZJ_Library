@@ -1,0 +1,958 @@
+
+Armor_000022.png
+size: 1984,1984
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Armor/Armor_000022/01_0
+  rotate: false
+  xy: 1568, 165
+  size: 94, 94
+  orig: 94, 94
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_1
+  rotate: false
+  xy: 1367, 247
+  size: 78, 83
+  orig: 78, 83
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_10
+  rotate: true
+  xy: 458, 1310
+  size: 266, 347
+  orig: 266, 347
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_11
+  rotate: false
+  xy: 1829, 372
+  size: 81, 112
+  orig: 82, 112
+  offset: 1, 0
+  index: -1
+Armor/Armor_000022/01_12
+  rotate: true
+  xy: 819, 1566
+  size: 96, 362
+  orig: 96, 362
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_13
+  rotate: false
+  xy: 1276, 1383
+  size: 251, 252
+  orig: 251, 252
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_14
+  rotate: false
+  xy: 458, 1578
+  size: 359, 404
+  orig: 359, 404
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_15
+  rotate: false
+  xy: 1625, 485
+  size: 86, 164
+  orig: 86, 164
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_16
+  rotate: false
+  xy: 379, 980
+  size: 343, 328
+  orig: 343, 328
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_17
+  rotate: true
+  xy: 1595, 261
+  size: 80, 130
+  orig: 81, 130
+  offset: 1, 0
+  index: -1
+Armor/Armor_000022/01_18
+  rotate: false
+  xy: 1013, 985
+  size: 249, 274
+  orig: 249, 274
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_19
+  rotate: true
+  xy: 724, 997
+  size: 262, 287
+  orig: 264, 287
+  offset: 2, 0
+  index: -1
+Armor/Armor_000022/01_2
+  rotate: true
+  xy: 1500, 56
+  size: 87, 85
+  orig: 87, 85
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_20
+  rotate: false
+  xy: 1762, 941
+  size: 215, 229
+  orig: 215, 229
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_21
+  rotate: false
+  xy: 1661, 2
+  size: 54, 72
+  orig: 55, 72
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_22
+  rotate: true
+  xy: 775, 231
+  size: 229, 217
+  orig: 229, 217
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_23
+  rotate: true
+  xy: 1419, 726
+  size: 117, 95
+  orig: 117, 95
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_24
+  rotate: false
+  xy: 1761, 710
+  size: 215, 229
+  orig: 215, 230
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_25
+  rotate: true
+  xy: 1799, 1172
+  size: 222, 176
+  orig: 222, 176
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_26
+  rotate: true
+  xy: 1826, 260
+  size: 110, 90
+  orig: 110, 90
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_27
+  rotate: false
+  xy: 1021, 81
+  size: 158, 187
+  orig: 158, 187
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_28
+  rotate: false
+  xy: 1713, 555
+  size: 160, 153
+  orig: 160, 153
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_29
+  rotate: true
+  xy: 1417, 46
+  size: 92, 81
+  orig: 92, 81
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_3
+  rotate: true
+  xy: 1207, 448
+  size: 83, 162
+  orig: 83, 163
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_30
+  rotate: true
+  xy: 2, 10
+  size: 115, 334
+  orig: 115, 334
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_31
+  rotate: true
+  xy: 1513, 986
+  size: 198, 247
+  orig: 198, 247
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_32
+  rotate: false
+  xy: 2, 1455
+  size: 454, 527
+  orig: 454, 527
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_33
+  rotate: true
+  xy: 1517, 792
+  size: 192, 242
+  orig: 192, 242
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_34
+  rotate: true
+  xy: 603, 462
+  size: 292, 158
+  orig: 292, 158
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_35
+  rotate: false
+  xy: 584, 161
+  size: 189, 299
+  orig: 189, 299
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_36
+  rotate: false
+  xy: 807, 1261
+  size: 320, 303
+  orig: 320, 304
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_37
+  rotate: false
+  xy: 1266, 845
+  size: 249, 138
+  orig: 249, 139
+  offset: 0, 1
+  index: -1
+Armor/Armor_000022/01_38
+  rotate: false
+  xy: 1236, 133
+  size: 128, 149
+  orig: 128, 149
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_39
+  rotate: true
+  xy: 352, 207
+  size: 281, 230
+  orig: 281, 231
+  offset: 0, 1
+  index: -1
+Armor/Armor_000022/01_4
+  rotate: false
+  xy: 1003, 449
+  size: 202, 176
+  orig: 202, 176
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_40
+  rotate: true
+  xy: 1875, 591
+  size: 117, 107
+  orig: 118, 107
+  offset: 1, 0
+  index: -1
+Armor/Armor_000022/01_41
+  rotate: true
+  xy: 815, 21
+  size: 208, 204
+  orig: 208, 204
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_42
+  rotate: false
+  xy: 1875, 505
+  size: 107, 84
+  orig: 107, 84
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_43
+  rotate: true
+  xy: 322, 490
+  size: 264, 279
+  orig: 264, 280
+  offset: 0, 1
+  index: -1
+Armor/Armor_000022/01_44
+  rotate: false
+  xy: 1367, 332
+  size: 78, 85
+  orig: 78, 85
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_45
+  rotate: false
+  xy: 1587, 76
+  size: 86, 87
+  orig: 86, 87
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_46
+  rotate: false
+  xy: 1725, 172
+  size: 99, 85
+  orig: 99, 85
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_47
+  rotate: false
+  xy: 1826, 169
+  size: 98, 89
+  orig: 98, 89
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_48
+  rotate: true
+  xy: 1366, 140
+  size: 105, 98
+  orig: 105, 98
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_49
+  rotate: false
+  xy: 1466, 145
+  size: 100, 104
+  orig: 100, 104
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_5
+  rotate: false
+  xy: 994, 270
+  size: 202, 177
+  orig: 202, 177
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_50
+  rotate: false
+  xy: 1727, 259
+  size: 97, 114
+  orig: 97, 114
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_51
+  rotate: true
+  xy: 763, 462
+  size: 163, 238
+  orig: 165, 238
+  offset: 1, 0
+  index: -1
+Armor/Armor_000022/01_52
+  rotate: false
+  xy: 352, 12
+  size: 215, 193
+  orig: 215, 193
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_53
+  rotate: true
+  xy: 1541, 271
+  size: 49, 52
+  orig: 49, 52
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_54
+  rotate: false
+  xy: 1198, 284
+  size: 167, 162
+  orig: 167, 162
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_55
+  rotate: true
+  xy: 1912, 389
+  size: 114, 65
+  orig: 114, 65
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_56
+  rotate: false
+  xy: 1276, 1189
+  size: 265, 192
+  orig: 265, 192
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_57
+  rotate: true
+  xy: 1918, 282
+  size: 105, 60
+  orig: 106, 61
+  offset: 0, 1
+  index: -1
+Armor/Armor_000022/01_58
+  rotate: false
+  xy: 1448, 514
+  size: 175, 135
+  orig: 175, 135
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_59
+  rotate: true
+  xy: 1447, 381
+  size: 131, 146
+  orig: 132, 146
+  offset: 1, 0
+  index: -1
+Armor/Armor_000022/01_6
+  rotate: true
+  xy: 2, 127
+  size: 351, 348
+  orig: 354, 363
+  offset: 0, 15
+  index: -1
+Armor/Armor_000022/01_60
+  rotate: false
+  xy: 1448, 659
+  size: 66, 65
+  orig: 66, 65
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_61
+  rotate: true
+  xy: 763, 627
+  size: 241, 223
+  orig: 242, 224
+  offset: 1, 1
+  index: -1
+Armor/Armor_000022/01_62
+  rotate: false
+  xy: 724, 870
+  size: 270, 125
+  orig: 270, 126
+  offset: 0, 1
+  index: -1
+Armor/Armor_000022/01_63
+  rotate: false
+  xy: 379, 756
+  size: 314, 222
+  orig: 314, 222
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_64
+  rotate: true
+  xy: 2, 480
+  size: 440, 318
+  orig: 440, 318
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_65
+  rotate: false
+  xy: 819, 1664
+  size: 415, 318
+  orig: 415, 318
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_66
+  rotate: true
+  xy: 2, 922
+  size: 531, 375
+  orig: 531, 375
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_67
+  rotate: true
+  xy: 1129, 1275
+  size: 289, 145
+  orig: 289, 146
+  offset: 0, 1
+  index: -1
+Armor/Armor_000022/01_7
+  rotate: false
+  xy: 1371, 419
+  size: 74, 114
+  orig: 74, 115
+  offset: 0, 1
+  index: -1
+Armor/Armor_000022/01_8
+  rotate: false
+  xy: 1207, 533
+  size: 161, 180
+  orig: 161, 180
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/01_9
+  rotate: false
+  xy: 1181, 104
+  size: 53, 164
+  orig: 53, 164
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_10
+  rotate: false
+  xy: 1709, 80
+  size: 62, 89
+  orig: 62, 89
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_11
+  rotate: true
+  xy: 1236, 1592
+  size: 43, 38
+  orig: 43, 38
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_12
+  rotate: true
+  xy: 1500, 7
+  size: 47, 85
+  orig: 47, 85
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_13
+  rotate: false
+  xy: 1664, 171
+  size: 59, 88
+  orig: 59, 88
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_14
+  rotate: false
+  xy: 1236, 2
+  size: 97, 129
+  orig: 97, 129
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_15
+  rotate: false
+  xy: 1695, 716
+  size: 60, 74
+  orig: 60, 74
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_16
+  rotate: true
+  xy: 695, 805
+  size: 63, 66
+  orig: 63, 66
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_17
+  rotate: false
+  xy: 1826, 114
+  size: 53, 53
+  orig: 53, 53
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_18
+  rotate: false
+  xy: 379, 1322
+  size: 63, 131
+  orig: 63, 131
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_19
+  rotate: true
+  xy: 775, 161
+  size: 68, 30
+  orig: 68, 30
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_20
+  rotate: false
+  xy: 379, 1310
+  size: 73, 10
+  orig: 73, 10
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_21
+  rotate: false
+  xy: 1129, 1262
+  size: 76, 11
+  orig: 76, 11
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_22
+  rotate: true
+  xy: 1934, 1656
+  size: 91, 32
+  orig: 91, 32
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_23
+  rotate: true
+  xy: 1185, 632
+  size: 92, 18
+  orig: 92, 18
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_24
+  rotate: true
+  xy: 1968, 1658
+  size: 89, 14
+  orig: 89, 14
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_25
+  rotate: true
+  xy: 1934, 1749
+  size: 89, 38
+  orig: 89, 38
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_26
+  rotate: false
+  xy: 1366, 133
+  size: 22, 5
+  orig: 22, 5
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_27
+  rotate: true
+  xy: 1675, 76
+  size: 93, 32
+  orig: 93, 32
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_28
+  rotate: false
+  xy: 994, 239
+  size: 25, 29
+  orig: 25, 29
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_29
+  rotate: true
+  xy: 338, 103
+  size: 22, 12
+  orig: 22, 12
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_30
+  rotate: false
+  xy: 1335, 2
+  size: 31, 15
+  orig: 31, 15
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_31
+  rotate: true
+  xy: 695, 938
+  size: 40, 22
+  orig: 40, 22
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_32
+  rotate: false
+  xy: 1762, 1172
+  size: 24, 12
+  orig: 24, 12
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_33
+  rotate: false
+  xy: 1390, 133
+  size: 14, 5
+  orig: 14, 5
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_34
+  rotate: true
+  xy: 322, 756
+  size: 16, 19
+  orig: 16, 19
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_35
+  rotate: false
+  xy: 1595, 343
+  size: 127, 140
+  orig: 127, 140
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_36
+  rotate: false
+  xy: 1264, 985
+  size: 247, 202
+  orig: 247, 202
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_37
+  rotate: false
+  xy: 1791, 1396
+  size: 154, 239
+  orig: 154, 239
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_38
+  rotate: true
+  xy: 1183, 1566
+  size: 39, 37
+  orig: 39, 37
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_39
+  rotate: false
+  xy: 1947, 1614
+  size: 35, 40
+  orig: 35, 40
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_40
+  rotate: true
+  xy: 1773, 86
+  size: 33, 44
+  orig: 33, 44
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_41
+  rotate: false
+  xy: 695, 756
+  size: 25, 47
+  orig: 25, 47
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_42
+  rotate: true
+  xy: 584, 463
+  size: 25, 17
+  orig: 25, 17
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_43
+  rotate: false
+  xy: 1595, 486
+  size: 28, 26
+  orig: 28, 26
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_44
+  rotate: true
+  xy: 1926, 202
+  size: 78, 50
+  orig: 78, 50
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_45
+  rotate: false
+  xy: 1447, 251
+  size: 92, 69
+  orig: 92, 69
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_46
+  rotate: true
+  xy: 1947, 1540
+  size: 33, 35
+  orig: 33, 35
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_47
+  rotate: true
+  xy: 1776, 2
+  size: 36, 40
+  orig: 36, 40
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_48
+  rotate: false
+  xy: 1222, 1566
+  size: 19, 24
+  orig: 19, 24
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_49
+  rotate: true
+  xy: 1478, 25
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_50
+  rotate: false
+  xy: 1776, 40
+  size: 40, 44
+  orig: 40, 44
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_51
+  rotate: false
+  xy: 569, 13
+  size: 244, 146
+  orig: 244, 146
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_52
+  rotate: false
+  xy: 996, 888
+  size: 268, 95
+  orig: 268, 95
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_53
+  rotate: true
+  xy: 1447, 322
+  size: 57, 146
+  orig: 57, 146
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_54
+  rotate: false
+  xy: 1587, 2
+  size: 72, 72
+  orig: 72, 72
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_55
+  rotate: false
+  xy: 1934, 1840
+  size: 45, 142
+  orig: 45, 142
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_56
+  rotate: true
+  xy: 1230, 846
+  size: 40, 30
+  orig: 40, 30
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_57
+  rotate: false
+  xy: 1881, 110
+  size: 40, 57
+  orig: 40, 57
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_58
+  rotate: false
+  xy: 322, 774
+  size: 55, 146
+  orig: 55, 146
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_59
+  rotate: true
+  xy: 1713, 486
+  size: 67, 154
+  orig: 67, 154
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_6
+  rotate: true
+  xy: 1717, 12
+  size: 66, 57
+  orig: 66, 57
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_60
+  rotate: true
+  xy: 1516, 651
+  size: 139, 177
+  orig: 139, 177
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_61
+  rotate: false
+  xy: 1724, 375
+  size: 103, 109
+  orig: 103, 109
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_62
+  rotate: false
+  xy: 1335, 19
+  size: 80, 112
+  orig: 80, 112
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_63
+  rotate: false
+  xy: 1370, 535
+  size: 76, 178
+  orig: 76, 178
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_64
+  rotate: true
+  xy: 988, 627
+  size: 97, 195
+  orig: 97, 195
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_65
+  rotate: true
+  xy: 996, 726
+  size: 160, 232
+  orig: 160, 232
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_66
+  rotate: false
+  xy: 1183, 1607
+  size: 51, 55
+  orig: 51, 55
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_67
+  rotate: true
+  xy: 1773, 121
+  size: 49, 51
+  orig: 49, 51
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_68
+  rotate: true
+  xy: 724, 1263
+  size: 45, 62
+  orig: 45, 62
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_69
+  rotate: false
+  xy: 1230, 715
+  size: 187, 128
+  orig: 187, 128
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_7
+  rotate: true
+  xy: 1021, 11
+  size: 68, 204
+  orig: 68, 204
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_70
+  rotate: false
+  xy: 1543, 1186
+  size: 254, 208
+  orig: 254, 208
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_71
+  rotate: false
+  xy: 1529, 1396
+  size: 260, 239
+  orig: 260, 239
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_72
+  rotate: false
+  xy: 1417, 2
+  size: 59, 42
+  orig: 59, 42
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_73
+  rotate: false
+  xy: 1947, 1575
+  size: 35, 37
+  orig: 35, 37
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_8
+  rotate: false
+  xy: 1236, 1637
+  size: 347, 345
+  orig: 347, 345
+  offset: 0, 0
+  index: -1
+Armor/Armor_000022/02_9
+  rotate: false
+  xy: 1585, 1637
+  size: 347, 345
+  orig: 347, 345
+  offset: 0, 0
+  index: -1

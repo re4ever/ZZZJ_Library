@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui/lib/theme-chalk/index.css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/element-ui/lib/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pixi.js@4.7.1/dist/pixi.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pixi-spine@1.5.22"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    </head>
+    <style>
+        .spine_btn {
+            font-size: 24px;
+            padding-top: 10px;
+            float: right;
+        }
+        .x_y_input {
+            margin-left: 3px;
+        }
+        .spine_card .el-card__body {
+            padding: 0px;
+        }
+        .el-dialog {
+            max-width: 1000px;
+        }
+        .pilot_spine_header {
+            display: grid;
+            grid-template-columns: auto repeat(3, 25%) auto-fill;
+            grid-column-gap: 3px;
+            grid-template-areas: "text xp yp scale btn";
+        }
+        .grid_img {
+            width: 100%;
+            height: auto;
+            max-width: 128px;
+            max-height: 256px;
+        }
+        .pilot_img {
+            grid-area: img;
+            margin-left: 0px;
+        }
+        .pilot_info_div {
+            display: inline-grid;
+            grid-template-rows: 24px 36px 36px;
+            grid-template-columns: minmax(64px, auto);
+            grid-column-gap: 15px;
+            grid-row-gap: 0px;
+            grid-template-areas:
+                "img rarity name"
+                "img rarity enName"
+                "img star star"
+                "img price price"
+                "detail detail detail";
+        }
+        @media screen and (min-width: 700px) {
+            .pilot_info_div {
+                grid-template-areas:
+                    "img rarity name detail"
+                    "img rarity enName detail"
+                    "img star star detail"
+                    "img price price detail";
+            }
+        }
+        .pilot_msg {
+            margin-top: 10px;
+        }
+        @media screen and (min-width: 700px) {
+            .pilot_msg {
+                margin-top: 0px;
+                margin-left: 10px;
+            }
+        }
+        .locked_skill {
+            filter: grayscale(100%);
+        }
+        .attribute_table,
+        .attribute_table tr,
+        .attribute_table tr td {
+            border: 1px solid #e6eaee;
+            text-align: center;
+        }
+        .attribute_table tr td {
+            border: 1px solid #e6eaee;
+            width: 25%;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        .attribute_table tr td.column {
+            background-color: #eff3f6;
+            color: #393c3e;
+        }
+        .normal_flex_list {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        .suit {
+            padding: 5px;
+            display: flex;
+            flex-flow: column;
+        }
+    </style>
+    <body>
+        <div id="fgPilot" v-loading="!loaded" style="max-width: 1000px;">
+            <el-menu :default-active="now_index" class="el-menu-demo" mode="horizontal" @select="handle_select">
+                <el-menu-item index="mainpage">홈페이지</el-menu-item>
+                <el-menu-item index="pilot">파일럿 일람</el-menu-item>
+            </el-menu>
+            <el-autocomplete v-model="search_input" style="margin-top: 10px; width: 100%;" placeholder="请输入机师名" :fetch-suggestions="query_pilot" @select="pilot_handle_select"></el-autocomplete>
+            <div>
+                <el-button type="primary" style="width: 100%; margin-top: 10px;" @click="open_view = true"> 파일럿 목록<i class="el-icon-arrow-down el-icon--right"></i> </el-button>
+            </div>
+            <center v-if="!selected_pilot">본 툴은 미등장 내용을 포함하고 있으며, 등장후 변경될 수 있습니다.</center>
+            <el-card style="margin-top: 10px;" v-if="selected_pilot" v-loading="skin_loading">
+                <div slot="header" class="clearfix">
+                    <span>스킨</span>
+                </div>
+                <el-avatar
+                    v-for="(pilot, index) in get_skin_list(selected_pilot.ID)"
+                    :key="index"
+                    @click.native="load_pilot_data(selected_pilot, pilot.Skin)"
+                    style="margin: 1px;"
+                    :size="48"
+                    :src="get_skin_icon(pilot.GirlId, pilot.Skin)"
+                ></el-avatar>
+            </el-card>
+            <div v-show="selected_skin">
+                <el-card style="margin-top: 10px;" class="box-card spine_card">
+                    <div slot="header" class="clearfix pilot_spine_header">
+                        <span style="grid-area: text; margin-top: 8px;">이미지</span>
+                        <el-input type="number" style="grid-area: xp;" class="x_y_input" v-if="spine_model" placeholder="x" v-model.number="spine_model.position.x"></el-input>
+                        <el-input type="number" style="grid-area: yp;" class="x_y_input" v-if="spine_model" placeholder="y" v-model.number="spine_model.position.y"></el-input>
+                        <el-input type="number" style="grid-area: scale;" class="x_y_input" v-if="spine_model" v-show="check_width()" placeholder="放大倍数" v-model.number="now_scale" :min="0"></el-input>
+                        <div style="grid-area: btn;">
+                            <!--el-button class="spine_icon" type="text" @click="now_scale -= 0.05"><i class="el-icon-zoom-out"></i></el-button>
+							<el-button class="spine_icon" type="text" @click="now_scale += 0.05"><i class="el-icon-zoom-in"></i></el-button-->
+                            <el-switch class="spine_btn" v-model="spine_switch" active-color="#13ce66" inactive-color="#ff4949"> </el-switch>
+                        </div>
+                    </div>
+                    <div id="spine" v-show="spine_switch" v-loading="skin_loading">
+                        <div style="position: absolute; left: 30px; display: flex; flex-flow: row; align-items: center;">
+                            <el-button type="text" @click="now_scale += 0.05"><i style="font-size: 36px;" class="el-icon-zoom-in"></i></el-button>
+                            <el-button type="text" @click="now_scale -= 0.05"><i style="font-size: 36px;" class="el-icon-zoom-out"></i></el-button>
+                        </div>
+                    </div>
+                </el-card>
+            </div>
+            <div v-if="selected_skin">
+                <el-card style="margin-top: 10px;">
+                    <div class="pilot_info_div">
+                        <div class="pilot_img">
+                            <img class="grid_img" :src="get_skin_square_head()" border="1" />
+                        </div>
+                        <div style="grid-area: rarity;">
+                            <img class="grid_img" style="max-height: 48px; width=auto;" :src="get_rarity(selected_pilot.GirlQualityType)" />
+                        </div>
+                        <span style="grid-area: name;">
+                            {{calc_language(selected_pilot.Name)}}
+                        </span>
+                        <span style="grid-area: enName;">
+                            {{selected_pilot.EnglishName}}
+                        </span>
+                        <div style="grid-area: star; font-size: 18px;">
+                            <i @click="set_star(-1)" class="el-icon-remove-outline"></i>
+                            <i v-for="star in max_star" @click="selected_star = star" :class="check_star_a(star)"></i>
+                            <i @click="set_star(1)" class="el-icon-circle-plus-outline"></i>
+                        </div>
+                        <div style="grid-area: price; height: 100%; display: flex; flex-flow: column; flex-wrap: wrap;">
+                            <span>별 등급</span>
+                            <div v-for="sp in get_next_star_item()">
+                                <el-avatar shape="square" style="margin: 1px; background: transparent;" :size="48" :src="get_icon(sp[0])"></el-avatar>
+                                <span>x{{sp[1]}}</span>
+                            </div>
+                        </div>
+                        <div style="grid-area: detail;">
+                            <hr v-if="!check_width()" />
+                            <div class="pilot_msg" style="white-space: pre-wrap;">{{calc_language(selected_pilot.Autobiography)}}</div>
+                        </div>
+                    </div>
+                </el-card>
+                <table class="attribute_table" width="100%" style="margin-top: 10px;">
+                    <tr>
+                        <td class="column">클래스</td>
+                        <td>
+                            <div class="normal_flex_list">
+                                <img :src='"assets/class/" + get_profession(selected_pilot.ProfessionType) + ".png"' style="background: black;" width="54" height="50" />
+                                <span>{{get_profession(selected_pilot.ProfessionType)}}</span>
+                            </div>
+                        </td>
+                        <td class="column">진영</td>
+                        <td>
+                            <div class="normal_flex_list">
+                                <img :src='"assets/camp/" + selected_pilot.GirlCampIcon + "_big.png"' width="50" height="50" />
+                                <span>{{get_camp(selected_pilot.GirlCamp)}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="column">무기</td>
+                        <td>{{get_equip_sub_type(selected_pilot.WeaponRecommend)}}</td>
+                        <td class="column">체스트아머</td>
+                        <td>{{get_equip_sub_type(selected_pilot.ChestRecommend)}}</td>
+                    </tr>
+                    <tr>
+                        <td class="column">레그아머</td>
+                        <td>{{get_equip_sub_type(selected_pilot.LegRecommend)}}</td>
+                        <td class="column">백플레이트</td>
+                        <td>{{get_equip_sub_type(selected_pilot.BagRecommend)}}</td>
+                    </tr>
+                    <tr>
+                        <td class="column">서약 효과</td>
+                        <td>
+                            <div v-for="marry in marry_status">
+                                <span>{{marry}}</span>
+                            </div>
+                        </td>
+                        <td class="column">선호 선물</td>
+                        <td>{{get_kindness_gift()}}</td>
+                    </tr>
+                    <tr>
+                        <td class="column">직업</td>
+                        <td>{{calc_language(selected_pilot.GirlJob)}}</td>
+                        <td class="column">CV</td>
+                        <td>{{calc_language(selected_pilot.CV)}}</td>
+                    </tr>
+                    <tr>
+                        <td class="column">성별</td>
+                        <td>{{calc_language(selected_pilot.Gender)}}</td>
+                        <td class="column">나이</td>
+                        <td>{{selected_pilot.Age}}</td>
+                    </tr>
+                    <tr>
+                        <td class="column">출생지</td>
+                        <td>{{calc_language(selected_pilot.BirthLocal)}}</td>
+                        <td class="column">키</td>
+                        <td>{{selected_pilot.GirlHeight}}</td>
+                    </tr>
+                    <tr>
+                        <td class="column">혈액형</td>
+                        <td>{{selected_pilot.BloodType}}</td>
+                        <td class="column">생일</td>
+                        <td>{{selected_pilot.Birthday}}</td>
+                    </tr>
+                    <tr>
+                        <td class="column">별자리</td>
+                        <td>{{calc_language(selected_pilot.Constellation)}}</td>
+                        <td class="column">취미</td>
+                        <td>{{calc_language(selected_pilot.Hobby)}}</td>
+                    </tr>
+                    <tr>
+                        <td class="column">좋아하는 것</td>
+                        <td>{{calc_language(selected_pilot.LikeThing)}}</td>
+                        <td class="column">싫어하는 것</td>
+                        <td>{{calc_language(selected_pilot.GirlHate)}}</td>
+                    </tr>
+                </table>
+                <div style="margin: 10px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>속성</span>
+                        <div style="display: flex; flex-flow: row; justify-content: space-between; align-items: center;">
+                            <i @click="set_selected_level(-1)" class="el-icon-arrow-left"></i>
+                            <span style="font-size: 16px;">Lv.</span>
+                            <el-input type="number" v-model="selected_level" style="width: 100px;"></el-input>
+                            <i @click="set_selected_level(1)" class="el-icon-arrow-right"></i>
+                        </div>
+                    </div>
+                    <hr />
+                    <div v-if="lp_lst">
+                        <div style="display: flex; padding: 10px;" v-for="lp in lp_lst">
+                            <span>{{calc_property_name(lp.key)}}</span>
+                            <div style="margin-left: 10px; flex-grow: 1; border: 1px solid black; text-align: center; position: relative;">
+                                <div style="height: 100%; position: absolute;" v-bind:style='{width: (lp.value * 100 / max_lp) + "%", background: property_color[lp.key]}'></div>
+                                <span style="position: relative; color: white;">{{lp.value}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin: 10px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>특기</span>
+                        <span>{{selected_pilot.GirlGood}}</span>
+                    </div>
+                    <hr />
+                    <span>{{calc_language(get_trunk_skill(selected_pilot.ExpertSkillWeapeon).TrunkSkillDesc)}}</span>
+                    <br />
+                    <span>{{calc_language(get_trunk_skill(selected_pilot.ExpertSkillEquip).TrunkSkillDesc)}}</span>
+                </div>
+                <div style="margin: 10px;">
+                    <span>천성</span>
+                    <hr />
+                    <div style="display: flex; padding: 10px;">
+                        <div style="width: 96px; border-radius: 10px; text-align: center; color: white; border: 1px solid black;" :style='{background: "rgba(" + mcv_nature_data.Color + ")"}'>
+                            <span>{{calc_language(mcv_nature_data.Desc)}}</span>
+                        </div>
+                        <span style="margin-left: 10px;">주요 천성</span>
+                    </div>
+                    <div style="display: flex; padding: 10px;">
+                        <div style="display: flex; flex-flow: column; max-width: 96px;">
+                            <el-avatar :src="'assets/icon/item/' + mcv_default_skill.SkillIcon + '.png'" shape="square" style="background: lightgrey; width: 96px; height: 96px;"></el-avatar>
+                            <span style="text-align: center;">{{calc_language(mcv_default_skill.SkillName)}}</span>
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <span>
+                                천부적 재능：<br />
+                                {{calc_language(mcv_default_skill.SkillDesc)}}
+                            </span>
+                        </div>
+                    </div>
+                    <div style="display: flex; padding: 10px; flex-flow: column;">
+                        <div style="display: flex; flex-flow: row; justify-content: space-between; width: 100%; text-align: center;">
+                            <div
+                                @click="now_nature = nature_data"
+                                :id="nature_data.key"
+                                v-for="nature_data in nature"
+                                style="border-radius: 10px; text-align: center; color: white;"
+                                :style='{background: "rgba(" + nature_data.color + ")", width: (100 / nature.length) + "%", border: now_nature.key == nature_data.key ? "2px solid black" : "0px"}'
+                            >
+                                <span>{{nature_data.key}}</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-flow: column; margin-top: 5px;">
+                            <div style="display: flex; fex-flow: row; padding-top: 5px;">
+                                <div style="display: flex; flex-flow: column; max-width: 96px; text-align: center;">
+                                    <img :src='"assets/icon/item/" + now_nature.value[mcv_nature_level - 1].SkillIcon + ".png"' width="96" height="96" style="background: lightgray;" />
+                                    <span>{{calc_language(now_nature.value[mcv_nature_level - 1].SkillName)}}</span>
+                                    <div style="display: flex; flex-flow: row; justify-content: space-between; align-items: center;">
+                                        <i @click="set_mcv_skill_lv(-1)" class="el-icon-arrow-left"></i>
+                                        <span style="font-size: 16px;">Lv.{{mcv_nature_level}}</span>
+                                        <i @click="set_mcv_skill_lv(1)" class="el-icon-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <span style="margin-left: 10px;">{{calc_language(now_nature.value[mcv_nature_level - 1].SkillDesc)}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin: 10px;">
+                    <span>자질</span>
+                    <hr />
+                    <div>
+                        <div style="display: flex; padding: 10px;">
+                            <div style="display: flex; flex-flow: column; max-width: 96px;">
+                                <img src="assets/icon/item/82020331.png" width="96" height="96" />
+                            </div>
+                            <div style="margin-left: 10px; white-space: pre-wrap;">
+                                <span v-for="(talent, idx) in talent_list">{{calc_language(talent_list[idx].TrunkSkillName) + '：\n' + calc_language(talent.TrunkSkillDesc) + '\n'}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin: 10px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>스킬</span>
+                        <el-switch v-if="selected_pilot_skill_array" v-model="unpacker_mode" active-color="#13ce66" inactive-color="#ff4949" active-text="解包模式" inactive-text="常规模式"></el-switch>
+                    </div>
+                    <div v-for="(skill, idx) in selected_pilot_skill_array">
+                        <hr />
+                        <div style="display: flex; padding: 10px;">
+                            <div style="display: flex; flex-flow: column; max-width: 96px;">
+                                <img :src="get_skill_icon(selected_pilot_skill_array[idx].skills[0].TrunkSkillIcon)" :class='skill.level > selected_star ? "locked_skill" : ""' width="96" height="96" />
+                                <span style="text-align: center;">{{calc_language(selected_pilot_skill_array[idx].skills[0].TrunkSkillName)}}</span>
+                                <span style="font-size: 16px; text-align: center;" v-if="skill.level > selected_star">☆{{skill.level}}에 해제</span>
+                                <div style="display: flex; flex-flow: row; justify-content: space-between; align-items: center;">
+                                    <i @click="set_skill_lv(idx, -1)" class="el-icon-arrow-left"></i>
+                                    <span style="font-size: 16px;">Lv.{{skill_level[idx]}}</span>
+                                    <i @click="set_skill_lv(idx, 1)" class="el-icon-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div style="margin-left: 10px; white-space: pre-wrap;">
+                                <span>{{calc_language(selected_pilot_skill_array[idx].skills[skill_level[idx] - 1].TrunkSkillDesc)}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin: 10px;" v-loading="mcv_loading">
+                    <span>SD이미지</span>
+                    <hr />
+                    <el-card style="margin-top: 10px;" class="box-card spine_card">
+                        <div slot="header" class="clearfix">
+                            <select v-if="mcv_spine" v-model="mcv_now_animation" @change="set_mcv_animation" style="width: 100%;">
+                                <option v-for="(anim, idx) in mcv_spine.spineData.animations" :value="anim.name">{{anim.name}}</option>
+                            </select>
+                        </div>
+                        <div id="mcv_spine" style="border: 1px solid black;">
+                            <div style="position: absolute; left: 30px;">
+                                <el-button type="text" @click="now_mcv_scale += 0.1"><i style="font-size: 36px;" class="el-icon-zoom-in"></i></el-button>
+                                <el-button type="text" @click="now_mcv_scale -= 0.1"><i style="font-size: 36px;" class="el-icon-zoom-out"></i></el-button>
+                            </div>
+                        </div>
+                    </el-card>
+                </div>
+                <div style="margin: 10px;" v-if="suit_data">
+                    <span>전용기</span>
+                    <hr />
+                    <el-card style="margin-top: 10px;" class="box-card spine_card" v-loading="suit_loading">
+                        <div slot="header" class="clearfix">
+                            <select v-if="suit_spine" v-model="suit_now_animation" @change="set_suit_animation" style="width: 100%;">
+                                <option v-for="(anim, idx) in suit_spine.spineData.animations" :value="anim.name">{{anim.name}}</option>
+                            </select>
+                        </div>
+                        <div id="suit_spine" style="border: 1px solid black;">
+                            <div style="position: absolute; left: 30px;">
+                                <el-button type="text" @click="now_suit_scale += 0.1"><i style="font-size: 36px;" class="el-icon-zoom-in"></i></el-button>
+                                <el-button type="text" @click="now_suit_scale -= 0.1"><i style="font-size: 36px;" class="el-icon-zoom-out"></i></el-button>
+                            </div>
+                        </div>
+                    </el-card>
+                    <div style="margin-top: 10px;" class="normal_flex_list">
+                        <span style="background: #eff3f6; width: 100%; text-align: center; border: 1px solid #e6eaee; box-sizing: border-box; padding: 5px;">{{calc_language(suit_data.SuitName)}}</span>
+                        <table class="attribute_table" width="100%">
+                            <tr>
+                                <td class="column">디자이너</td>
+                                <td>{{calc_language(suit_data.Designer)}}</td>
+                                <td class="column">제조</td>
+                                <td>{{calc_language(suit_data.Manufacturer)}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <span style="margin-top: 5px;">{{calc_language(suit_data.Disc)}}</span>
+                    <div style="border: 1px solid black; margin-top: 5px;">
+                        <div class="suit">
+                            <span>2피스 효과</span>
+                            <span style="white-space: pre-wrap;">{{calc_language(suit_data.Suit2Desc)}}</span>
+                        </div>
+                        <div class="suit">
+                            <span>4피스 효과</span>
+                            <span style="white-space: pre-wrap;">{{calc_language(suit_data.Suit4Desc)}}</span>
+                        </div>
+                        <div class="suit">
+                            <span>전용기 활성화 효과</span>
+                            <span style="white-space: pre-wrap;">{{calc_language(suit_data.Suit5Desc)}}</span>
+                        </div>
+                        <div class="suit">
+                            <span>전용기 데이터</span>
+                            <div style="display: flex; flex-flow: column; padding-left: 5px;" v-for="armor_data in get_machine_armor_data()">
+                                <span v-if="armor_data.Clip != 9999">탄창용량：{{armor_data.Clip}}</span>
+                                <span v-if="armor_data.ReloadType != 0">탄창교체：{{armor_data.ReloadTime / 1000.0}}s</span>
+                                <span>공격속도：{{armor_data.WeaponSpeed}}次/s</span>
+                                <span>스킬Pt：{{Number(armor_data.Trigger).toFixed(4) * 200}}</span>
+                                <span>무기배율：{{Number(armor_data.BulletlAggRatio[0] * 100).toFixed(2)}}%</span>
+                                <div v-if="suit_compare && suit_compare[0] != suit_compare[1]">
+                                    <span>충격 저항：</span>
+                                    <span>{{suit_compare[0]}}[Lv.{{calc_hit_grade(suit_compare[0])}}]</span>
+                                    <span :style='{color: suit_compare[0] > suit_compare[1] ? "blue" : "red"}'>→</span>
+                                    <span>{{suit_compare[1]}}[Lv.{{calc_hit_grade(suit_compare[1])}}]</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <el-dialog :visible.sync="open_view" title="机师列表" v-if="loaded" width="90%" :close-on-click-modal="false">
+                <el-avatar v-for="(pilot, index) in get_pilot_list()" :key="index" @click.native="load_pilot_data(pilot, 1)" :src="get_default_head_icon(pilot.BasicSkin)" style="margin: 1px;" :size="64"></el-avatar>
+            </el-dialog>
+        </div>
+        <script src="js/skeleton_binary.js"></script>
+        <script src="js/basic_data.js"></script>
+        <script src="js/pilot.js"></script>
+    </body>
+</html>

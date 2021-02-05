@@ -1,2 +1,3 @@
-# ZZZJ_Library
- Translated Kor https://github.com/Kengxxiao/Evelynn
+https://github.com/Kengxxiao/Evelynn
+
+의 한글화

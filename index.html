@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title></title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui/lib/theme-chalk/index.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/element-ui/lib/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+	</head>
+	<body>
+		<div id="fgIndex" v-loading="!loaded">
+			<el-menu :default-active="now_index" class="el-menu-demo" mode="horizontal" @select="handle_select">
+			  <el-menu-item index="mainpage">홈페이지</el-menu-item>
+			  <el-menu-item index="pilot">파일럿 일람</el-menu-item>
+			</el-menu>
+			<p>https://github.com/Kengxxiao/Evelynn 한글미러</p>
+		</div>
+		<script src="js/basic_data.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

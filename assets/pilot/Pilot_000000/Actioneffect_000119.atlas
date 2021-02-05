@@ -1,0 +1,55 @@
+
+Actioneffect_000119.png
+size: 548,548
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01_0
+  rotate: true
+  xy: 286, 124
+  size: 147, 161
+  orig: 147, 161
+  offset: 0, 0
+  index: -1
+01_1
+  rotate: false
+  xy: 171, 22
+  size: 113, 250
+  orig: 113, 250
+  offset: 0, 0
+  index: -1
+01_2
+  rotate: false
+  xy: 2, 274
+  size: 320, 272
+  orig: 320, 272
+  offset: 0, 0
+  index: -1
+01_3
+  rotate: true
+  xy: 286, 2
+  size: 120, 173
+  orig: 120, 173
+  offset: 0, 0
+  index: -1
+01_4
+  rotate: false
+  xy: 461, 86
+  size: 60, 185
+  orig: 60, 185
+  offset: 0, 0
+  index: -1
+01_5
+  rotate: true
+  xy: 2, 33
+  size: 239, 167
+  orig: 239, 167
+  offset: 0, 0
+  index: -1
+01_6
+  rotate: true
+  xy: 324, 273
+  size: 273, 181
+  orig: 273, 181
+  offset: 0, 0
+  index: -1
