@@ -355,7 +355,7 @@
                 <div style="margin: 10px;">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <span>스킬</span>
-                        <el-switch v-if="selected_pilot_skill_array" v-model="unpacker_mode" active-color="#13ce66" inactive-color="#ff4949" active-text="解包模式" inactive-text="常规模式"></el-switch>
+                        <el-switch v-if="selected_pilot_skill_array" v-model="unpacker_mode" active-color="#13ce66" inactive-color="#ff4949" active-text="해제 모드" inactive-text="일반 모드"></el-switch>
                     </div>
                     <div v-for="(skill, idx) in selected_pilot_skill_array">
                         <hr />
@@ -439,7 +439,7 @@
                             <div style="display: flex; flex-flow: column; padding-left: 5px;" v-for="armor_data in get_machine_armor_data()">
                                 <span v-if="armor_data.Clip != 9999">탄창용량：{{armor_data.Clip}}</span>
                                 <span v-if="armor_data.ReloadType != 0">탄창교체：{{armor_data.ReloadTime / 1000.0}}s</span>
-                                <span>공격속도：{{armor_data.WeaponSpeed}}次/s</span>
+                                <span>공격속도：{{armor_data.WeaponSpeed}}회/s</span>
                                 <span>스킬Pt：{{Number(armor_data.Trigger).toFixed(4) * 200}}</span>
                                 <span>무기배율：{{Number(armor_data.BulletlAggRatio[0] * 100).toFixed(2)}}%</span>
                                 <div v-if="suit_compare && suit_compare[0] != suit_compare[1]">
